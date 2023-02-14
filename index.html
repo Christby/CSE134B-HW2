@@ -32,17 +32,18 @@
             color: white;
             align-self: center;
             font-size: larger;
-            margin-right: 10px;
+            margin-right: 2%;
         }
         .name {
             color: white;
             font-size: x-large;
-            margin-left: 10px;
+            margin-left: 2%;
             flex-grow: 1;
         }
         h1 {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+            margin-bottom: 7%;
         }
         h2 {
             text-align: center;
@@ -69,21 +70,29 @@
             display: grid;
             grid-template-rows: 25%, 25%, 25%, 25%;
             /* grid-template-columns: 30px, 30px, 30px, 30px, 30px, 30px; */
-            grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+            grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+            width: 100%;
+            margin-bottom: 7%;
         }
         picture {
-            grid-area: 1 / 1 / 5 / 4;
+            /* filter : contrast(.8); */
+            grid-area: 1 / 3 / 5 / 4;
+            right: 0;
         }
         aside {
-            grid-area: 2 / 5 / 4 / 7;
-            margin-left: 40px;
+            grid-area: 2 / 4 / 4 / 7;
             text-align: center;
+        }
+        aside p {
+            font-size: large;
+            font-weight: bold;
         }
         hr {
             width: 100%;
         }
-        .introduction {
-
+        .intro_text {
+            width: 60%;
+            
         }
         footer {
             background-color: rgb(234, 241, 248);
@@ -114,7 +123,7 @@
     </header>
     <div class="basic_info">
         <picture>
-            <img src="IMG_0001.jpg" alt="head portrait" width="235" height="250">
+            <img src="IMG_0001.jpg" alt="head portrait" width="250" height="270">
         </picture>
         <aside>
             <p>Age: 20</p>
@@ -125,14 +134,15 @@
                 and looking forward to meeting challenges.</p>
         </aside>
     </div>
-    <hr>
 
     <section class="introduction">
         <h2>Introduction</h2>
-        <p class="intro_text">I was born and raised in China. I am glad to have the opportunity 
-            to go to college in United States. Meeting with new people, making new friends, 
-            and embracing new cultures makes me really excited. I love my life here!
-        </p>
+        <div class="intro_text">
+            <p>I was born and raised in China. I am glad to have the opportunity 
+                to go to college in United States. Meeting with new people, making new friends, 
+                and embracing new cultures makes me really excited. I love my life here!
+            </p>
+        </div>
         <h3>Education Background</h3>
         <p>Unicersity of California - San Diego</p>
         <p>B.S. Computer Science<br>B.S. Probability and Statistics</p>
@@ -170,7 +180,7 @@
             </tr>
         </table>
         <br>
-        <form action="/action_page.php">
+        <form>
             <p><label for="comment">Send me a message if you want:</label></p>
             <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
             <br>
