@@ -3,29 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Projects</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .text {
+            text-align: center;
+            font-size: larger;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        button {
+            border-radius: 5px;
+            border: 2px solid lightgreen;
+            background-color: white;
+            transition-duration: 0.5s;
+        }
+        a:hover {
+            color: white;
+        }
+        button:hover {
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 <body>
     <h1>Projects</h1>
     <details>
-        <summary>Project 1</summary>
+        <summary>Project 1: Parking Tickets Payment</summary>
         <p>description of this project</p>
     </details>
-    <br>
-    <details>
-        <summary>Project 2</summary>
-        <p>description of this project</p>
-    </details>
-    <br>
-    <details>
-        <summary>Project 3</summary>
-        <p>description of this project</p>
-    </details>
-    <br>
-    <p>View all the details of the projects in my <a 
-        href="https://github.com/Christby?tab=repositories">GitHub</a>!
-    </p>
     <br><br>
-    <form action="/action_page.php" method="get">
+    <details>
+        <summary>Project 2: Recommender System for Steam</summary>
+        <p>description of this project</p>
+    </details>
+    <br><br>
+    <details>
+        <summary>Project 3: File Compression</summary>
+        <p>description of this project</p>
+    </details>
+    <br><br>
+    <p class="text">View all the details of the projects in my GitHub!</p>
+    <button>
+        <a href="https://github.com/Christby?tab=repositories"> GitHub </a>
+    </button>
+    <br><br>
+    <!-- <form action="/action_page.php" method="get">
         <label for="project">What's your favorite project?</label>
         <input list="projects" name="project" id="project">
         <datalist id="projects">
@@ -34,6 +61,6 @@
             <option value="Project 3">
         </datalist>
         <input type="submit">
-    </form>
+    </form> -->
 </body>
 </html>

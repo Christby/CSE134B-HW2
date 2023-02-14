@@ -5,21 +5,22 @@
     <title>Boyu Tian's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-        span {border: 1px inset;}
         table, th, td {border: 1px solid black;}
 
         body {
-            /*
             display: flex;
             flex-direction: column;
             align-items: center;
-            */
+            justify-content: center;
         }
         main {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+        header {
+            width: 100%;
         }
         nav {
             background-color: darkslategrey;
@@ -31,10 +32,13 @@
             color: white;
             align-self: center;
             font-size: larger;
+            margin-right: 10px;
         }
         .name {
             color: white;
             font-size: x-large;
+            margin-left: 10px;
+            flex-grow: 1;
         }
         h1 {
             font-family: Arial, Helvetica, sans-serif;
@@ -51,7 +55,7 @@
         }
         /* .basic_info > picture {
             float:left;
-        }
+        }/IMG_0001.jpg
         .basic_info > aside {
             float:right;
             display: flex;
@@ -72,12 +76,25 @@
         }
         aside {
             grid-area: 2 / 5 / 4 / 7;
+            margin-left: 40px;
+            text-align: center;
         }
         hr {
             width: 100%;
         }
         .introduction {
 
+        }
+        footer {
+            background-color: rgb(234, 241, 248);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table {
+            column-width: 300px;
+            text-align: center;
         }
     </style>
 </head>
@@ -91,7 +108,7 @@
             <a class="navlink" href="/skills.html">Skills</a>
             <a class="navlink" href="/projects.html">Projects</a>
             <a class="navlink" href="/default_link.html">Experience</a>
-            <a class="navlink" href="/CSS midterm.html">CSS Midterm</a>
+            <!-- <a class="navlink" href="/CSS midterm.html">CSS Midterm</a> -->
         </nav> 
         <h1><span>Hi, I'm Boyu Tian</span></h1>
     </header>
@@ -132,7 +149,6 @@
                 <img src="IMG_3757.jpg" alt="Potato Chip" width="600" height="300">
                 <figcaption>Climbing at the Potato Chip in San Diego</figcaption>
             </figure>
-            <button type="button" onclick="alert('Nice to meet you too!')">Say hello to me!</button>
         </div>
     </section>
     <hr>
@@ -140,7 +156,6 @@
     <footer>
         <h2>Contact Me</h2>
         <table>
-            <caption>Always available</caption>
             <colgroup>
                 <col span="1" class="phone number">
                 <col span="1" class="email">
@@ -156,10 +171,10 @@
         </table>
         <br>
         <form action="/action_page.php">
-            <p><label for="comment">Leave me some comments or advice if you want:</label></p>
+            <p><label for="comment">Send me a message if you want:</label></p>
             <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
             <br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Send">
         </form>
         <br>
     </footer>
