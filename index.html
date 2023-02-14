@@ -12,12 +12,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
         }
         main {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
+            background-color: lightcyan;
         }
         header {
             width: 100%;
@@ -27,18 +30,24 @@
             display: flex;
             gap: 5%;
             width: 100%;
+            margin-bottom: 5%;
         }
         .navlink {
             color: white;
             align-self: center;
             font-size: larger;
             margin-right: 2%;
+            transition-duration: 0.5s;
         }
         .name {
             color: white;
             font-size: x-large;
             margin-left: 2%;
             flex-grow: 1;
+            transition-duration: 1s;
+        }
+        .name:hover {
+            transform: rotateY(30deg);
         }
         h1 {
             font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +61,9 @@
             text-decoration: none;
         }
         a:hover {
-            color: aquamarine
+            color: aquamarine;
+            font-weight: bold;
+            border: 2px solid aquamarine;
         }
         /* .basic_info > picture {
             float:left;
@@ -91,9 +102,9 @@
             width: 100%;
         }
         .intro_text {
-            width: 60%;
-            
+            padding: 0% 20%;
         }
+
         footer {
             background-color: rgb(234, 241, 248);
             width: 100%;
