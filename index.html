@@ -23,19 +23,25 @@
         }
         nav {
             background-color: darkslategrey;
-            display: block;
-            max-width: max-content;
-            gap: 20px;
+            display: flex;
+            gap: 100px;
+            width: 100%;
         }
         .navlink {
             color: white;
             align-self: center;
+            font-size: larger;
         }
         .name {
             color: white;
+            font-size: x-large;
         }
         h1 {
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
         }
         a {
             text-decoration: none;
@@ -43,7 +49,7 @@
         a:hover {
             color: aquamarine
         }
-        .basic_info > picture {
+        /* .basic_info > picture {
             float:left;
         }
         .basic_info > aside {
@@ -54,6 +60,24 @@
             text-align: center;
             align-content: center;
             justify-content: center;
+        } */
+        .basic_info {
+            display: grid;
+            grid-template-rows: 25%, 25%, 25%, 25%;
+            /* grid-template-columns: 30px, 30px, 30px, 30px, 30px, 30px; */
+            grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+        }
+        picture {
+            grid-area: 1 / 1 / 5 / 4;
+        }
+        aside {
+            grid-area: 2 / 5 / 4 / 7;
+        }
+        hr {
+            width: 100%;
+        }
+        .introduction {
+
         }
     </style>
 </head>
@@ -62,7 +86,7 @@
 <main>
     <header>
         <nav>
-            <p class="name">Boyu Tian</p>
+            <p class="name"><b>Boyu Tian</b></p>
             <a class="navlink" href="/index.html">Homepage</a>
             <a class="navlink" href="/skills.html">Skills</a>
             <a class="navlink" href="/projects.html">Projects</a>
@@ -73,7 +97,7 @@
     </header>
     <div class="basic_info">
         <picture>
-            <img src="IMG_4795.jpg" alt="head portrait" width="320" height="400">
+            <img src="IMG_4795.jpg" alt="head portrait" width="200" height="250">
         </picture>
         <aside>
             <p>Age: 20</p>
@@ -86,12 +110,15 @@
     </div>
     <hr>
 
-    <section>
+    <section class="introduction">
         <h2>Introduction</h2>
+        <p class="intro_text">I was born and raised in China. I am glad to have the opportunity 
+            to go to college in United States. Meeting with new people, making new friends, 
+            and embracing new cultures makes me really excited. I love my life here!
+        </p>
         <h3>Education Background</h3>
         <p>Unicersity of California - San Diego</p>
-        <p>B.S. <code>Computer Science</code><br>B.S. Probability and Statistics</p>
-        <iframe src="https://www.ucsd.edu" title="UCSD"></iframe>
+        <p>B.S. Computer Science<br>B.S. Probability and Statistics</p>
         <br>
         <div>
             <h3>This is me <i>Relaxing</i> and hear my <em>VOICE</em>!</h3>
@@ -111,7 +138,7 @@
     <hr>
 
     <footer>
-        <h2>Contact Information</h2>
+        <h2>Contact Me</h2>
         <table>
             <caption>Always available</caption>
             <colgroup>
@@ -135,20 +162,6 @@
             <input type="submit" value="Submit">
         </form>
         <br>
-        <div>
-            <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
-            <script>
-                var c = document.getElementById("myCanvas");
-                var ctx = c.getContext("2d");
-                ctx.fillRect(0, 0, 300, 100);
-            </script>
-            <svg width="300" height="200">
-                <rect x="75" y="10" rx="30" ry="30" width="150" height="150"/>
-            </svg>       
-        </div>
-        <template>
-            <p>This is a template</p>
-        </template>
     </footer>
     <hr>
 </main>
