@@ -4,139 +4,36 @@
     <meta charset="UTF-8">
     <title>Boyu Tian's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        table, th, td {border: 1px solid black;}
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            background-color: azure;
-        }
-        header {
-            width: 100%;
-        }
-        nav {
-            background-color: darkslategrey;
-            display: flex;
-            gap: 5%;
-            width: 100%;
-            margin-bottom: 5%;
-        }
-        .navlink {
-            color: white;
-            align-self: center;
-            font-size: larger;
-            margin-right: 2%;
-            transition-duration: 0.5s;
-        }
-        .name {
-            color: white;
-            font-size: x-large;
-            margin-left: 2%;
-            flex-grow: 1;
-            transition-duration: 1s;
-        }
-        .name:hover {
-            transform: rotateY(30deg);
-        }
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 7%;
-        }
-        h2 {
-            text-align: center;
-        }
-        a {
-            text-decoration: none;
-        }
-        a:hover {
-            color: aquamarine;
-            font-weight: bold;
-            border: 2px solid aquamarine;
-            border-radius: 7px;
-        }
-        .basic_info {
-            display: grid;
-            grid-template-rows: 25%, 25%, 25%, 25%;
-            grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-            width: 100%;
-            margin-bottom: 7%;
-            /* display: flex;
-            justify-content: center;
-            gap: 15%; */
-        }
-        picture {
-            /* filter : contrast(.8); */
-            grid-area: 1 / 4 / 5 / 4;
-        }
-        aside {
-            grid-area: 2 / 5 / 4 / 7;
-            font-size: 1rem;
-        }
-        aside p {
-            font-size: large;
-            font-weight: bold;
-        }
-        span {
-            border: 3px solid aqua;
-        }
-        hr {
-            width: 100%;
-        }
-        .intro_text {
-            padding: 0% 20%;
-            margin-bottom: 5%;
-        }
-        .education {
-            display: flex;
-            justify-content: center;
-            gap: 10%;
-        }
-        .college {
-            text-align: center;
-            float: left;
-        }
-        .course {
-            float: right;
-        }
-        .course h3 {
-            text-align: center;
-        }
-        footer {
-            background-color: rgb(234, 241, 248);
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        table {
-            column-width: 300px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 <main>
     <header>
+        <input class="nav-input" type="checkbox" id="toggle">
         <nav>
-            <p class="name"><b>Boyu Tian</b></p>
-            <a class="navlink" href="/index.html">Homepage</a>
-            <a class="navlink" href="/skills.html">Skills</a>
-            <a class="navlink" href="/projects.html">Projects</a>
-            <a class="navlink" href="/default_link.html">Experience</a>
+            <a class="nav-name" href="#">Boyu Tian</a>
+
+            <lable class="nav-toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </lable>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/default_link.html">Experience</a>
+                </li>
+            </ul>
         </nav> 
         <h1>Hi, I'm Boyu Tian</h1>
     </header>
@@ -223,7 +120,7 @@
         </form>
         <br>
     </footer>
-    <hr>
+    <hr>`
 </main>
 
 </body>
