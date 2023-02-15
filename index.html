@@ -20,7 +20,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            background-color: lightcyan;
+            background-color: azure;
         }
         header {
             width: 100%;
@@ -51,6 +51,7 @@
         }
         h1 {
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
             text-align: center;
             margin-bottom: 7%;
         }
@@ -64,48 +65,55 @@
             color: aquamarine;
             font-weight: bold;
             border: 2px solid aquamarine;
+            border-radius: 7px;
         }
-        /* .basic_info > picture {
-            float:left;
-        }/IMG_0001.jpg
-        .basic_info > aside {
-            float:right;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            align-content: center;
-            justify-content: center;
-        } */
         .basic_info {
             display: grid;
             grid-template-rows: 25%, 25%, 25%, 25%;
-            /* grid-template-columns: 30px, 30px, 30px, 30px, 30px, 30px; */
             grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
             width: 100%;
             margin-bottom: 7%;
+            /* display: flex;
+            justify-content: center;
+            gap: 15%; */
         }
         picture {
             /* filter : contrast(.8); */
-            grid-area: 1 / 3 / 5 / 4;
-            right: 0;
+            grid-area: 1 / 4 / 5 / 4;
         }
         aside {
-            grid-area: 2 / 4 / 4 / 7;
-            text-align: center;
+            grid-area: 2 / 5 / 4 / 7;
+            font-size: 1rem;
         }
         aside p {
             font-size: large;
             font-weight: bold;
+        }
+        span {
+            border: 3px solid aqua;
         }
         hr {
             width: 100%;
         }
         .intro_text {
             padding: 0% 20%;
-            margin: 20px;
+            margin-bottom: 5%;
         }
-
+        .education {
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+        }
+        .college {
+            text-align: center;
+            float: left;
+        }
+        .course {
+            float: right;
+        }
+        .course h3 {
+            text-align: center;
+        }
         footer {
             background-color: rgb(234, 241, 248);
             width: 100%;
@@ -129,9 +137,8 @@
             <a class="navlink" href="/skills.html">Skills</a>
             <a class="navlink" href="/projects.html">Projects</a>
             <a class="navlink" href="/default_link.html">Experience</a>
-            <!-- <a class="navlink" href="/CSS midterm.html">CSS Midterm</a> -->
         </nav> 
-        <h1><span>Hi, I'm Boyu Tian</span></h1>
+        <h1>Hi, I'm Boyu Tian</h1>
     </header>
     <div class="basic_info">
         <picture>
@@ -140,8 +147,9 @@
         <aside>
             <p>Age: 20</p>
             <p>Software Engineer</p>
-            <p>Location: <strong>San Diego</strong></p>
-            <p>Sophomore student in <b>UCSD</b></p>
+            <p>Language: English, Mandarin</p>
+            <p>Location: San Diego</p>
+            <p>Sophomore in UCSD</p>
             <p>Passionate student who is thirst for knowledge<br>
                 and looking forward to meeting challenges.</p>
         </aside>
@@ -152,18 +160,33 @@
         <div class="intro_text">
             <p>I was born and raised in China. I am glad to have the opportunity 
                 to go to college in United States. Meeting with new people, making new friends, 
-                and embracing new cultures makes me really excited. I love my life here!
+                and embracing new cultures makes me really excited. I love my life here!<br><br>
+                I love learning about computer science because it offers great opportunities for 
+                true creativity and innovativeness, generating new products or achieving something
+                makes me feel excited and proud. 
             </p>
         </div>
-        <h3>Education Background</h3>
-        <p>Unicersity of California - San Diego</p>
-        <p>B.S. Computer Science<br>B.S. Probability and Statistics</p>
-        <br>
-        <div>
+        <div class="education">
+            <div class="college">
+                <h3>Education Background</h3>
+                <p><b>Unicersity of California - San Diego</b></p>
+                <p>B.S. Computer Science<br><br>
+                    B.S. Probability and Statistics<br><br>
+                    GPA: 3.93
+                </p>
+            </div>
+            <div class="course">
+                <h3>Relative Coursework</h3>
+                <ul>
+                    <li>Fundamentals of Computer Programming</li><br>
+                    <li>Advanced Data Structures</li><br>
+                    <li>Design and Analysis of Algorithms</li><br>
+                    <li>Principles of Software Development</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div>
             <h3>This is me <i>Relaxing</i> and hear my <em>VOICE</em>!</h3>
-            <audio controls>
-                <source src="SayHi.mp3" type="audio/mp3">
-            </audio>
             <video width="320" height="240" controls>
                 <source src="IMG_3519.mp4" type="video/mp4">
             </video>
@@ -171,7 +194,7 @@
                 <img src="IMG_3757.jpg" alt="Potato Chip" width="600" height="300">
                 <figcaption>Climbing at the Potato Chip in San Diego</figcaption>
             </figure>
-        </div>
+        </div> -->
     </section>
     <hr>
 
