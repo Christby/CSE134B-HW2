@@ -1,0 +1,31 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.tech_skill {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.team_skill {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 60px;
+    justify-content: center;
+}
+
+.skill {
+    max-width: 50ch;
+    border: 3px solid turquoise;
+    border-radius: 10px;
+    padding: 8px 8px;
+    background-color: rgb(244, 249, 250);
+}

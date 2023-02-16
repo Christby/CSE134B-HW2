@@ -9,6 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0;
 }
 
 main {
@@ -83,10 +84,11 @@ nav .nav-list .nav-link {
         position: absolute;
         background: darkcyan;
         width: 100%;
-        top: 67px;
+        top: 59px;
         left: 0;
-        transform: translateY(-100%);
-        z-index: -1;
+        /* transform: translateY(-100%);
+        z-index: -1; */
+        visibility: hidden;
         transition: 1s;
     }
     nav .nav-list .nav-item {
@@ -103,6 +105,7 @@ nav .nav-toggler {
     margin: 18px -10px 0 0;
     cursor: pointer;
 }
+
 nav .nav-toggler .bar {
     width: 40px;
     height: 5px;
@@ -112,13 +115,32 @@ nav .nav-toggler .bar {
     background: white;
 }
 
-/* .nav-input {
+input {
     display: none;
 }
 
-.nav-input:checked ~ nav .nav-list {
-    transform: translateY(0);
-} */
+input:checked ~ nav .nav-list {
+    /* transform: translateY(0); */
+    visibility: visible;
+}
+
+input:checked ~ nav .nav-toggler {
+    margin-top: 15px;
+    transition: 1s;
+}
+
+input:checked ~ nav .nav-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ nav .nav-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .nav-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
