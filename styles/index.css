@@ -19,7 +19,7 @@ main {
     justify-content: center;
     width: 100%;
     background-color: azure;
-    background-image: url("background.jpg");
+    background-image: url("../background.jpg");
 }
 
 header {
@@ -79,7 +79,7 @@ nav .nav-list .nav-link {
     }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 640px) {
     nav .nav-list {
         display: grid;
         position: absolute;
@@ -220,7 +220,7 @@ hr {
 }
 
 footer {
-    background-color: rgb(234, 241, 248);
+    background-color: rgb(240, 245, 245);
     width: 100%;
     display: flex;
     flex-direction: column;
