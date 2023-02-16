@@ -38,6 +38,12 @@ h1 {
 }
 
 @media (max-width: 675px) {
+    .tech_skill {
+        flex-direction: column;
+    }
+    .team_skill {
+        flex-direction: column;
+    }
     .skill {
         max-width: 120ch;
     }
