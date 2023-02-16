@@ -36,7 +36,7 @@ h1 {
     background-color: rgb(244, 249, 250, 0.6);
 }
 
-@media (max-width: 675px) {
+@media screen and (max-width: 675px) {
     .skill {
         max-width: 120ch;
     }
