@@ -10,6 +10,7 @@ span {
     border: 2px solid lightskyblue;
     border-radius: 10px;
     padding: 1% 1%;
+    background-color: rgba(222, 231, 238, 0.5);
 }
 .project {
     margin-bottom: 3%;
@@ -26,18 +27,21 @@ li {
 }
 .text {
     text-align: center;
-    font-size: larger;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: "Spectral";
 }
 a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 800;
+    font-family: "Spectral";
 }
 button {
     border-radius: 10px;
     border: 3px solid lightgreen;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.4);
     transition-duration: 0.5s;
 }
 .button {
