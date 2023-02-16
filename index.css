@@ -149,6 +149,15 @@ h1 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    animation-name: hello;
+    animation-duration: 3s;
+}
+
+@keyframes hello {
+    0% {color: black;}
+    33% {color: black; font-size: 70px;}
+    66% {color: darkolivegreen; font-size: 70px;}
+    100% {color: black}
 }
 
 h2 {
