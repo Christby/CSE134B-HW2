@@ -1,5 +1,5 @@
 body {
-    /* background-image: ; */
+    background-image: url("background.jpg");
 }
 h1 {
     text-align: center;
@@ -17,7 +17,7 @@ span {
 }
 .description {
     padding: 2%;
-    border: 5px solid lightcyan;
+    border: 5px solid rgb(190, 255, 255);
     border-radius: 30%;
     background-color: azure;
 }

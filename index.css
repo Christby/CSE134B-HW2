@@ -116,30 +116,30 @@ nav .nav-toggler .bar {
     background: white;
 }
 
-input {
+.nav-input {
     display: none;
 }
 
-input:checked ~ nav .nav-list {
+.nav-input:checked ~ nav .nav-list {
     /* transform: translateY(0); */
     visibility: visible;
 }
 
-input:checked ~ nav .nav-toggler {
+.nav-input:checked ~ nav .nav-toggler {
     margin-top: 15px;
     transition: 1s;
 }
 
-input:checked ~ nav .nav-toggler .bar:nth-child(1) {
+.nav-input:checked ~ nav .nav-toggler .bar:nth-child(1) {
     position: absolute;
     transform: rotate(45deg);
 }
 
-input:checked ~ nav .nav-toggler .bar:nth-child(2) {
+.nav-input:checked ~ nav .nav-toggler .bar:nth-child(2) {
     display: none;
 }
 
-input:checked ~ nav .nav-toggler .bar:nth-child(3) {
+.nav-input:checked ~ nav .nav-toggler .bar:nth-child(3) {
     transform: rotate(-45deg);
 }
 
@@ -187,7 +187,7 @@ hr {
 }
 
 .introduction {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .education {
