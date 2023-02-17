@@ -1,3 +1,8 @@
+:root {
+    --skyblue: #449bf2;
+    --olive: #1f7618;
+}
+
 * {
     list-style: none;
     text-decoration: none;
@@ -70,7 +75,7 @@ nav .nav-list .nav-link {
     font-weight: 500;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     nav {
         padding: 0 2rem;
     }
@@ -170,8 +175,8 @@ h1 {
 
 @keyframes hello {
     0% {color: black;}
-    33% {color: black; font-size: 3em;}
-    66% {color: darkolivegreen; font-size: 3em;}
+    33% {color: var(--skyblue); font-size: 3em;}
+    66% {color: var(--olive); font-size: 3em;}
     100% {color: black}
 }
 
