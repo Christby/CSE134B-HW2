@@ -110,6 +110,9 @@ nav .nav-list .nav-link {
         flex-direction: column;
         text-align: center;
     }
+    .course {
+        text-align: center;
+    }
 }
 
 nav .nav-toggler {

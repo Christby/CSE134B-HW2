@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Spectral;
+    src: url(../Spectral-Regular.ttf);
+}
+
 body {
     background-image: url("../background.jpg");
-    font-family: "Spectral";
+    font-family: Spectral;
 }
 h1 {
     text-align: center;
