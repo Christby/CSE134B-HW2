@@ -7,9 +7,19 @@ body {
     background-image: url("../background.jpg");
     font-family: Spectral;
 }
+picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+@media (max-width: 640px) {
+    picture {
+        width: 250px;
+        height: 110px;
+    }
+}
 h1 {
     text-align: center;
-    margin-bottom: 5%;
 }
 span {
     font-weight: bold;
