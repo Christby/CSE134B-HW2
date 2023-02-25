@@ -116,6 +116,7 @@ nav .nav-list .nav-link {
         text-align: center;
     }
     .course {
+        flex-direction: column;
         text-align: center;
     }
 }
