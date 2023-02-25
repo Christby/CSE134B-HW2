@@ -47,25 +47,21 @@ li {
     font-weight: 600;
     font-family: "Spectral";
 }
-a {
+input {
+    border-radius: 10px;
+    border: 3px solid lightgreen;
+    background-color: rgb(255, 255, 255, 0.4);
+    transition-duration: 0.5s;
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     font-weight: 800;
     font-family: "Spectral";
 }
-button {
-    border-radius: 10px;
-    border: 3px solid lightgreen;
-    background-color: rgb(255, 255, 255, 0.4);
-    transition-duration: 0.5s;
-}
 .button {
     text-align: center;
 }
-a:hover {
-    color: white;
-}
-button:hover {
+input:hover {
     background-color: lightgreen;
+    color: white;
 }

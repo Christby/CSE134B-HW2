@@ -235,6 +235,10 @@ hr {
     text-align: center;
 }
 
+.course ul li {
+    margin-bottom: 5%;
+}
+
 footer {
     background-color: rgb(240, 245, 245);
     width: 100%;
